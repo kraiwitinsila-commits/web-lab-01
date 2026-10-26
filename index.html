@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NOCTURNE | Specialty Coffee & Craft Botanical Bar</title>
+    <meta name="description" content="คาเฟ่และบาร์สไตล์โมเดิร์นลอฟท์ผสมผสานไม้ธรรมชาติและแมกไม้ร่มรื่น กลางวันเสิร์ฟ Specialty Coffee กลางคืนพบกับ Craft Cocktails & Bar บรรยากาศสุดคลาสสิก">
+    
+    <!-- Google Fonts: Cormorant Garamond & Prompt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        noir: {
+                            950: '#07080a',
+                            900: '#0d0f13',
+                            850: '#13161c',
+                            800: '#1a1e26',
+                            700: '#262c37',
+                        },
+                        timber: {
+                            100: '#f5efe6',
+                            200: '#e3d2be',
+                            300: '#cbb092',
+                            400: '#b48c66',
+                            500: '#9d6d40',
+                            600: '#82542f',
+                            700: '#643d1f',
+                            800: '#4a2b13',
+                        },
+                        amberGlow: {
+                            400: '#f6ad55',
+                            500: '#ed8936',
+                            600: '#dd6b20',
+                        },
+                        botanical: {
+                            900: '#0e1d15',
+                            800: '#162e22',
+                            700: '#234433',
+                            600: '#325d46',
+                            500: '#43785b',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Prompt"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-noir-950 text-gray-200 font-sans antialiased selection:bg-timber-500 selection:text-white overflow-x-hidden">
+
+    <!-- Top Announcement Bar (Day & Night Vibe Status) -->
+    <div class="bg-gradient-to-r from-noir-900 via-timber-900/40 to-noir-900 border-b border-white/5 py-2 px-4 text-xs tracking-wider text-center text-gray-400">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2 mx-auto sm:mx-0">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>OPEN DAILY: <span class="text-white font-medium">08:30 - 00:00 น.</span></span>
+                <span class="text-timber-400/60">|</span>
+                <span>☕ Day Cafe & Slow Bar: <span class="text-gray-300">08:30 - 17:00</span></span>
+                <span class="text-timber-400/60">|</span>
+                <span>🍸 Night Bar & Tapas: <span class="text-gray-300">17:00 - 00:00</span></span>
+            </div>
+            <div class="hidden sm:flex items-center gap-4 text-xs text-timber-300">
+                <a href="tel:0987654321" class="hover:text-white transition-colors"><i class="fa-solid fa-phone mr-1"></i> 098-765-4321</a>
+                <span class="text-white/20">•</span>
+                <a href="#reservation" class="hover:text-white transition-colors"><i class="fa-solid fa-calendar-check mr-1"></i> จองโต๊ะล่วงหน้า</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header id="main-header" class="sticky top-0 z-50 backdrop-blur-md bg-noir-950/85 border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="group flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-sm border border-timber-400/40 bg-noir-900/80 flex items-center justify-center text-timber-300 group-hover:border-timber-300 transition-all shadow-[0_0_15px_rgba(180,140,102,0.15)]">
+                        <i class="fa-solid fa-whiskey-glass text-lg group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif text-2xl tracking-[0.25em] font-bold text-white group-hover:text-timber-300 transition-colors uppercase">NOCTURNE</span>
+                        <span class="text-[10px] tracking-[0.35em] text-timber-400 uppercase font-light">Cafe & Botanical Bar</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#home" class="nav-link text-sm uppercase tracking-wider text-gray-300 hover:text-white transition-colors relative py-1">หน้าแรก</a>
+                    <a href="#about" class="nav-link text-sm uppercase tracking-wider text-gray-300 hover:text-white transition-colors relative py-1">เรื่องราวของเรา</a>
+                    <a href="#menu" class="nav-link text-sm uppercase tracking-wider text-gray-300 hover:text-white transition-colors relative py-1">เมนูแนะนำ</a>
+                    <a href="#atmosphere" class="nav-link text-sm uppercase tracking-wider text-gray-300 hover:text-white transition-colors relative py-1">บรรยากาศร้าน</a>
+                    <a href="#music-events" class="nav-link text-sm uppercase tracking-wider text-gray-300 hover:text-white transition-colors relative py-1">อีเวนต์ & ดนตรี</a>
+                    <a href="#location" class="nav-link text-sm uppercase tracking-wider text-gray-300 hover:text-white transition-colors relative py-1">แผนที่ & ติดต่อ</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <!-- Day/Night Ambience Toggle Button -->
+                    <button id="theme-ambience-toggle" class="px-3 py-1.5 rounded-full border border-timber-500/30 bg-noir-900/60 text-timber-200 text-xs flex items-center gap-2 hover:border-timber-400 transition-all" title="สลับโหมดบรรยากาศ">
+                        <i id="theme-icon" class="fa-solid fa-moon text-amberGlow-400"></i>
+                        <span id="theme-text">Night Bar</span>
+                    </button>
+
+                    <!-- Reserve Table Button -->
+                    <a href="#reservation" class="px-5 py-2.5 rounded-sm bg-gradient-to-r from-timber-600 via-timber-500 to-timber-600 hover:from-timber-500 hover:to-timber-400 text-white font-medium text-xs tracking-wider uppercase shadow-lg shadow-timber-900/50 hover:shadow-timber-500/30 transition-all border border-timber-400/30 flex items-center gap-2">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <span>จองโต๊ะ</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-300 hover:text-white focus:outline-none" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-noir-900/95 border-b border-white/10 backdrop-blur-xl px-6 py-6 transition-all duration-300">
+            <div class="flex flex-col gap-4">
+                <a href="#home" class="mobile-nav-link text-base text-gray-200 hover:text-timber-300 font-medium py-2 border-b border-white/5">หน้าแรก (Home)</a>
+                <a href="#about" class="mobile-nav-link text-base text-gray-200 hover:text-timber-300 font-medium py-2 border-b border-white/5">เรื่องราวของร้าน (Our Story)</a>
+                <a href="#menu" class="mobile-nav-link text-base text-gray-200 hover:text-timber-300 font-medium py-2 border-b border-white/5">เมนูคราฟต์ (Signature Menu)</a>
+                <a href="#atmosphere" class="mobile-nav-link text-base text-gray-200 hover:text-timber-300 font-medium py-2 border-b border-white/5">บรรยากาศ & มุมถ่ายรูป (Gallery)</a>
+                <a href="#music-events" class="mobile-nav-link text-base text-gray-200 hover:text-timber-300 font-medium py-2 border-b border-white/5">ดนตรีสด & กิจกรรม (Events)</a>
+                <a href="#location" class="mobile-nav-link text-base text-gray-200 hover:text-timber-300 font-medium py-2 border-b border-white/5">ตำแหน่งที่ตั้ง (Location)</a>
+                <a href="#reservation" class="w-full text-center py-3 mt-2 rounded bg-timber-600 text-white font-medium text-sm tracking-wider uppercase shadow-md">
+                    <i class="fa-regular fa-calendar-check mr-2"></i> จองโต๊ะ / สำรองที่นั่ง
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-noir-950">
+        <!-- Background Imagery with Dark Vignette & Amber Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=2000&q=80" 
+                 alt="Nocturne Bar Atmosphere" 
+                 class="w-full h-full object-cover object-center scale-105 animate-subtle-zoom opacity-35 filter brightness-75 contrast-125">
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/70 to-noir-950/80"></div>
+            <!-- Radial Warm Amber Glow Behind Main Title -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-timber-600/15 rounded-full blur-[140px] pointer-events-none"></div>
+            <!-- Subtle Botanical Green Glow in Corner -->
+            <div class="absolute top-1/4 right-10 w-96 h-96 bg-botanical-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+            <!-- Badges -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-timber-400/30 bg-noir-900/80 backdrop-blur-sm text-timber-300 text-xs sm:text-sm tracking-widest uppercase mb-6 shadow-[0_0_20px_rgba(180,140,102,0.15)]">
+                <i class="fa-solid fa-leaf text-botanical-500 text-xs"></i>
+                <span>Specialty Coffee by Day • Craft Spirits by Night</span>
+            </div>
+
+            <!-- Main Heading with Cormorant Garamond -->
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-[0.12em] text-white uppercase leading-tight mb-6 drop-shadow-xl">
+                RAW TIMBER.<br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-timber-200 via-amber-100 to-timber-400">DARK AMBIENCE.</span>
+            </h1>
+
+            <!-- Thai Subtitle Description -->
+            <p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-300 font-light leading-relaxed mb-10">
+                คาเฟ่และบาร์ลับท่ามกลางร่มเงาพฤกษา ผสานสถาปัตยกรรมไม้จริง โทนดำตัดขาวสุดคมเข้ม<br class="hidden sm:inline"/>
+                เพลิดเพลินกับกาแฟคั่วพิเศษรสละมุนยามบ่าย แล้วปล่อยใจไปกับค็อกเทลคลาสสิกและแสงไฟสลัวยามค่ำคืน
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <a href="#menu" class="w-full sm:w-auto px-8 py-3.5 rounded-sm bg-gradient-to-r from-timber-600 to-timber-500 hover:from-timber-500 hover:to-timber-400 text-white font-medium text-sm tracking-widest uppercase border border-timber-400/40 shadow-xl shadow-timber-900/60 hover:shadow-amber-500/20 transition-all flex items-center justify-center gap-3 group">
+                    <span>สำรวจเมนูซิกเนเจอร์</span>
+                    <i class="fa-solid fa-arrow-right-long text-timber-200 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="#reservation" class="w-full sm:w-auto px-8 py-3.5 rounded-sm border border-white/20 hover:border-timber-400 bg-noir-900/60 hover:bg-white/5 text-gray-200 hover:text-white font-medium text-sm tracking-widest uppercase backdrop-blur-sm transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-martini-glass-citrus text-timber-400"></i>
+                    <span>สำรองที่นั่งบาร์</span>
+                </a>
+            </div>
+
+            <!-- Bottom Stats / Feature Highlights -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-white/10 max-w-4xl mx-auto text-left">
+                <div class="p-4 rounded border border-white/5 bg-noir-900/40 backdrop-blur-sm">
+                    <div class="font-serif text-2xl sm:text-3xl text-timber-300 font-bold">100%</div>
+                    <div class="text-xs text-gray-400 mt-1">Single Origin & Specialty Coffee</div>
+                </div>
+                <div class="p-4 rounded border border-white/5 bg-noir-900/40 backdrop-blur-sm">
+                    <div class="font-serif text-2xl sm:text-3xl text-amber-200 font-bold">25+</div>
+                    <div class="text-xs text-gray-400 mt-1">Craft Cocktails & Natural Spirits</div>
+                </div>
+                <div class="p-4 rounded border border-white/5 bg-noir-900/40 backdrop-blur-sm">
+                    <div class="font-serif text-2xl sm:text-3xl text-timber-300 font-bold">Acoustic</div>
+                    <div class="text-xs text-gray-400 mt-1">Live Vinyl & Jazz Sessions (Fri-Sat)</div>
+                </div>
+                <div class="p-4 rounded border border-white/5 bg-noir-900/40 backdrop-blur-sm">
+                    <div class="font-serif text-2xl sm:text-3xl text-emerald-400 font-bold">Garden</div>
+                    <div class="text-xs text-gray-400 mt-1">Botanical Courtyard & Glasshouse</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll down indicator -->
+        <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-gray-500 hover:text-timber-300 transition-colors animate-bounce" aria-label="Scroll down">
+            <i class="fa-solid fa-chevron-down text-lg"></i>
+        </a>
+    </section>
+
+    <!-- SECTION: OUR STORY & CONCEPT (ไม้ + โทนดำตัดขาว + ธรรมชาติ) -->
+    <section id="about" class="py-24 bg-noir-900 relative overflow-hidden border-t border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Images Collage with Wood & Botanical elements -->
+                <div class="lg:col-span-6 relative">
+                    <!-- Amber Glow backdrop -->
+                    <div class="absolute -top-10 -left-10 w-72 h-72 bg-timber-700/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <!-- Image 1: Raw Wood Bar Counter -->
+                            <div class="overflow-hidden rounded-sm border border-white/10 group shadow-2xl">
+                                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" 
+                                     alt="Slow Bar Coffee and Timber Wood" 
+                                     class="w-full h-64 sm:h-72 object-cover filter brightness-90 contrast-110 group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                            <!-- Image 2: Cocktail Shaker at Night -->
+                            <div class="overflow-hidden rounded-sm border border-timber-500/30 group shadow-2xl">
+                                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" 
+                                     alt="Craft Cocktails at Night" 
+                                     class="w-full h-44 sm:h-52 object-cover filter brightness-85 group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 pt-8">
+                            <!-- Image 3: Botanical Foliage in Dark Space -->
+                            <div class="overflow-hidden rounded-sm border border-white/10 group shadow-2xl">
+                                <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80" 
+                                     alt="Botanical Plants and Bar Interior" 
+                                     class="w-full h-48 sm:h-56 object-cover filter brightness-80 group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                            <!-- Image 4: Pour Over Filter Coffee -->
+                            <div class="overflow-hidden rounded-sm border border-white/10 group shadow-2xl">
+                                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" 
+                                     alt="Specialty Pour Over Coffee" 
+                                     class="w-full h-60 sm:h-68 object-cover filter brightness-90 group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Quote Box -->
+                    <div class="absolute -bottom-6 -right-2 sm:right-6 bg-noir-950/90 border border-timber-500/40 p-5 rounded-sm shadow-2xl backdrop-blur-md max-w-xs">
+                        <div class="flex items-center gap-3 text-timber-300 mb-1">
+                            <i class="fa-solid fa-tree text-lg"></i>
+                            <span class="text-xs tracking-widest uppercase font-serif">Solid Teakwood & Flora</span>
+                        </div>
+                        <p class="text-xs text-gray-300 italic font-light">"ท่อนไม้สักทอง ผนังคอนกรีตสีเข้ม และแมกไม้ธรรมชาติ คือหัวใจของที่นี่"</p>
+                    </div>
+                </div>
+
+                <!-- Right Description Content -->
+                <div class="lg:col-span-6">
+                    <div class="inline-flex items-center gap-2 text-timber-400 text-xs tracking-[0.3em] uppercase mb-4">
+                        <span class="w-8 h-[1px] bg-timber-400"></span>
+                        <span>THE CONCEPT & PHILOSOPHY</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white tracking-wide uppercase leading-tight mb-6">
+                        เมื่อเสน่ห์ของ <span class="text-timber-300 underline decoration-timber-500/50 underline-offset-8">บาร์คลาสสิก</span><br/>
+                        บรรจบกับความสงบแห่งธรรมชาติ
+                    </h2>
+
+                    <p class="text-gray-300 text-base leading-relaxed mb-6 font-light">
+                        <strong class="text-white font-medium">NOCTURNE</strong> ก่อตั้งขึ้นจากความหลงใหลใน 2 ช่วงเวลาที่แตกต่างกันอย่างลงตัว: 
+                        ความเงียบสงบที่ชวนผ่อนคลายของกลิ่นกาแฟในยามเช้า และมนต์เสน่ห์อันน่าค้นหาของค็อกเทลบาร์ในยามค่ำคืน
+                    </p>
+
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 font-light">
+                        เราออกแบบร้านด้วยคอนเซปต์ <strong class="text-white">Dark Aesthetic & Natural Timber</strong> 
+                        เน้นการใช้เฉดสีดำด้าน (Matte Black) ตัดกับเส้นสายสีขาวคลีน เพื่อสะท้อนความเท่แบบโมเดิร์น 
+                        พร้อมเสริมทัพด้วยเคาน์เตอร์บาร์ไม้สักหนาพิเศษ ลวดลายตาไม้ธรรมชาติ และต้นไม้นานาพันธุ์ 
+                        เพื่อให้ทุกการมาเยือนของคุณคือการพักผ่อนอย่างแท้จริง
+                    </p>
+
+                    <!-- 3 Core Pillars -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4 p-3 rounded border border-white/5 bg-noir-850/50 hover:border-timber-500/30 transition-colors">
+                            <div class="w-10 h-10 rounded-sm bg-timber-900/60 border border-timber-500/30 flex items-center justify-center text-timber-300 shrink-0">
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-medium text-sm tracking-wide">Daytime: Specialty Coffee & Slow Bar</h4>
+                                <p class="text-xs text-gray-400 mt-1">คัดสรรเมล็ดกาแฟ Single Origin จากแหล่งปลูกชั้นนำทั้งไทยและต่างประเทศ สกัดด้วยความพิถีพิถัน</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-3 rounded border border-white/5 bg-noir-850/50 hover:border-timber-500/30 transition-colors">
+                            <div class="w-10 h-10 rounded-sm bg-timber-900/60 border border-timber-500/30 flex items-center justify-center text-timber-300 shrink-0">
+                                <i class="fa-solid fa-martini-glass"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-medium text-sm tracking-wide">Nighttime: Botanical Craft Cocktails</h4>
+                                <p class="text-xs text-gray-400 mt-1">เมนูค็อกเทลที่ผสมผสานสมุนไพร ดอกไม้ และ Infused Spirits สูตรพิเศษที่บาร์เทนเดอร์คิดค้นเฉพาะร้านเรา</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-3 rounded border border-white/5 bg-noir-850/50 hover:border-timber-500/30 transition-colors">
+                            <div class="w-10 h-10 rounded-sm bg-timber-900/60 border border-timber-500/30 flex items-center justify-center text-timber-300 shrink-0">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-medium text-sm tracking-wide">Green Courtyard & Secret Garden</h4>
+                                <p class="text-xs text-gray-400 mt-1">คอร์ตยาร์ดต้นไม้ร่มรื่นใจกลางร้าน ให้ความรู้สึกสดชื่น โปร่งสบายในทุกมื้อของคุณ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="flex items-center gap-4">
+                        <a href="#atmosphere" class="text-xs tracking-widest uppercase font-medium text-timber-300 hover:text-white transition-colors flex items-center gap-2">
+                            <span>ชมภาพบรรยากาศร้านเพิ่มเติม</span>
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: SIGNATURE MENU HIGHLIGHTS -->
+    <section id="menu" class="py-24 bg-noir-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <div class="inline-flex items-center gap-2 text-timber-400 text-xs tracking-[0.3em] uppercase mb-3">
+                    <i class="fa-solid fa-crown text-timber-500"></i>
+                    <span>CRAFTED WITH PRECISION</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white tracking-wide uppercase mb-4">
+                    SIGNATURE CRAFT MENU
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base font-light">
+                    สัมผัสรสชาติอันเป็นเอกลักษณ์ ตั้งแต่กาแฟ Specialty สกัดสดใหม่ ไปจนถึง Signature Cocktails รสสัมผัสลุ่มลึก
+                </p>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-8" id="menu-filters">
+                    <button class="menu-tab-btn active px-5 py-2 rounded-full text-xs uppercase tracking-wider font-medium border border-timber-500 bg-timber-600 text-white transition-all shadow-md" data-category="all">
+                        ทั้งหมด (All)
+                    </button>
+                    <button class="menu-tab-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-medium border border-white/10 bg-noir-900/60 text-gray-300 hover:border-timber-400/40 hover:text-white transition-all" data-category="coffee">
+                        ☕ Specialty Coffee
+                    </button>
+                    <button class="menu-tab-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-medium border border-white/10 bg-noir-900/60 text-gray-300 hover:border-timber-400/40 hover:text-white transition-all" data-category="cocktail">
+                        🍸 Craft Cocktails
+                    </button>
+                    <button class="menu-tab-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-medium border border-white/10 bg-noir-900/60 text-gray-300 hover:border-timber-400/40 hover:text-white transition-all" data-category="mocktail">
+                        🌿 Botanical Mocktails
+                    </button>
+                    <button class="menu-tab-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-medium border border-white/10 bg-noir-900/60 text-gray-300 hover:border-timber-400/40 hover:text-white transition-all" data-category="tapas">
+                        🥐 Bakery & Bar Bites
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Grid Container -->
+            <div id="menu-items-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Item 1: Smoky Oak Dirty (Coffee) -->
+                <div class="menu-item-card group relative bg-noir-900/70 border border-white/10 hover:border-timber-400/50 rounded-sm overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-timber-900/30" data-category="coffee">
+                    <div class="relative h-60 overflow-hidden bg-noir-850">
+                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" 
+                             alt="Smoky Oak Dirty" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90">
+                        <div class="absolute top-3 left-3 bg-noir-950/80 border border-timber-500/40 text-timber-300 text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-sm backdrop-blur-sm">
+                            ☕ Best Seller
+                        </div>
+                        <div class="absolute top-3 right-3 bg-noir-950/90 text-white font-serif text-lg font-bold px-3 py-1 rounded-sm border border-white/10">
+                            ฿ 165
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <h3 class="font-serif text-xl font-bold text-white group-hover:text-timber-300 transition-colors">Smoky Oak Dirty</h3>
+                            <span class="text-xs text-timber-400 font-mono">Specialty</span>
+                        </div>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                            นมเย็นจัดผสมกลิ่นโอ๊กรมควัน ท็อปด้วยดับเบิ้ลช็อตเอสเปรสโซ่เข้มข้น รสสัมผัสนุ่มละมุน หอมกลิ่นไม้โอ๊คเตาเผา
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Oak Barrel Milk</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Dark Roast Blend</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Creamy & Bold</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Smoked Rosemary Old Fashioned (Cocktail) -->
+                <div class="menu-item-card group relative bg-noir-900/70 border border-white/10 hover:border-timber-400/50 rounded-sm overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-timber-900/30" data-category="cocktail">
+                    <div class="relative h-60 overflow-hidden bg-noir-850">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" 
+                             alt="Smoked Rosemary Old Fashioned" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90">
+                        <div class="absolute top-3 left-3 bg-amber-950/80 border border-amber-500/40 text-amber-300 text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-sm backdrop-blur-sm">
+                            🍸 Signature Cocktail
+                        </div>
+                        <div class="absolute top-3 right-3 bg-noir-950/90 text-white font-serif text-lg font-bold px-3 py-1 rounded-sm border border-white/10">
+                            ฿ 380
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <h3 class="font-serif text-xl font-bold text-white group-hover:text-timber-300 transition-colors">Smoked Rosemary Old Fashioned</h3>
+                            <span class="text-xs text-amber-400 font-mono">Cocktail</span>
+                        </div>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                            เบอร์เบินวิสกี้ชั้นเลิศ ปรุงด้วยบิตเตอร์สูตรโบราณ รมควันด้วยกิ่งโรสแมรี่สดจากสวนและเปลือกส้มคาราเมล
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Aged Bourbon</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Torched Rosemary</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Clear Ice Sphere</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Botanical Forest Gin Tonic (Cocktail) -->
+                <div class="menu-item-card group relative bg-noir-900/70 border border-white/10 hover:border-timber-400/50 rounded-sm overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-timber-900/30" data-category="cocktail">
+                    <div class="relative h-60 overflow-hidden bg-noir-850">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" 
+                             alt="Botanical Forest Gin Tonic" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90">
+                        <div class="absolute top-3 left-3 bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-sm backdrop-blur-sm">
+                            🌿 Botanical Favorite
+                        </div>
+                        <div class="absolute top-3 right-3 bg-noir-950/90 text-white font-serif text-lg font-bold px-3 py-1 rounded-sm border border-white/10">
+                            ฿ 350
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <h3 class="font-serif text-xl font-bold text-white group-hover:text-timber-300 transition-colors">Botanical Forest G&T</h3>
+                            <span class="text-xs text-emerald-400 font-mono">Cocktail</span>
+                        </div>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                            คราฟต์จินกลั่นพฤกษศาสตร์ ผสมโทนิกระดับพรีเมียม ประดับด้วยลูกจูนิเปอร์ ผลแครนเบอร์รี่ และยอดสนสด
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Artisan Gin</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Elderflower Tonic</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Crisp & Herbal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Single Origin Hand Drip (Coffee) -->
+                <div class="menu-item-card group relative bg-noir-900/70 border border-white/10 hover:border-timber-400/50 rounded-sm overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-timber-900/30" data-category="coffee">
+                    <div class="relative h-60 overflow-hidden bg-noir-850">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" 
+                             alt="Single Origin Pour Over" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90">
+                        <div class="absolute top-3 left-3 bg-noir-950/80 border border-timber-500/40 text-timber-300 text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-sm backdrop-blur-sm">
+                            ☕ Slow Bar Pour Over
+                        </div>
+                        <div class="absolute top-3 right-3 bg-noir-950/90 text-white font-serif text-lg font-bold px-3 py-1 rounded-sm border border-white/10">
+                            ฿ 180
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <h3 class="font-serif text-xl font-bold text-white group-hover:text-timber-300 transition-colors">Ethiopia Geisha Pour-Over</h3>
+                            <span class="text-xs text-timber-400 font-mono">Specialty</span>
+                        </div>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                            ดริปกาแฟสดแก้วต่อแก้ว โน้ตดอกมะลิ พีชขาว และชาเอิร์ลเกรย์ สะอาด สว่าง สดชื่น เหมาะสำหรับสายสโลว์บาร์
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Jasmine & Peach</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Light Roast</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">V60 Extraction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Midnight Cedar Mocktail (Mocktail) -->
+                <div class="menu-item-card group relative bg-noir-900/70 border border-white/10 hover:border-timber-400/50 rounded-sm overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-timber-900/30" data-category="mocktail">
+                    <div class="relative h-60 overflow-hidden bg-noir-850">
+                        <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=800&q=80" 
+                             alt="Midnight Cedar Mocktail" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90">
+                        <div class="absolute top-3 left-3 bg-noir-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-sm backdrop-blur-sm">
+                            🌿 Zero Proof
+                        </div>
+                        <div class="absolute top-3 right-3 bg-noir-950/90 text-white font-serif text-lg font-bold px-3 py-1 rounded-sm border border-white/10">
+                            ฿ 190
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <h3 class="font-serif text-xl font-bold text-white group-hover:text-timber-300 transition-colors">Midnight Cedar Fizz</h3>
+                            <span class="text-xs text-emerald-400 font-mono">Mocktail</span>
+                        </div>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                            ม็อกเทลไร้แอลกอฮอล์ กลิ่นอายไม้ซีดาร์รมควัน น้ำทับทิมสกัดเย็น และโซดาสมุนไพรป่า ให้ความสดชื่นกระปรี้กระเปร่า
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Zero Alcohol</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Cold Pressed Pomegranate</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Smoked Cedar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Artisan Croissant & Truffle Bites (Tapas) -->
+                <div class="menu-item-card group relative bg-noir-900/70 border border-white/10 hover:border-timber-400/50 rounded-sm overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-timber-900/30" data-category="tapas">
+                    <div class="relative h-60 overflow-hidden bg-noir-850">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" 
+                             alt="Artisan Truffle Brioche & Croissant" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90">
+                        <div class="absolute top-3 left-3 bg-noir-950/80 border border-timber-500/40 text-timber-300 text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-sm backdrop-blur-sm">
+                            🥐 Bakery & Tapas
+                        </div>
+                        <div class="absolute top-3 right-3 bg-noir-950/90 text-white font-serif text-lg font-bold px-3 py-1 rounded-sm border border-white/10">
+                            ฿ 240
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <h3 class="font-serif text-xl font-bold text-white group-hover:text-timber-300 transition-colors">Truffle Brioche & Croissant</h3>
+                            <span class="text-xs text-timber-400 font-mono">Bites</span>
+                        </div>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                            ครัวซองต์เนยฝรั่งเศสอบสดใหม่ เสิร์ฟคู่กับบริออชทรัฟเฟิลดำและแยมลูกฟิกโฮมเมด ทานคู่กาแฟหรือไวน์ได้อย่างยอดเยี่ยม
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">French Butter</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Black Truffle Butter</span>
+                            <span class="text-[10px] bg-noir-800 text-gray-300 px-2 py-0.5 rounded">Fresh Daily Baked</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Full Menu Download / View PDF CTA -->
+            <div class="mt-14 text-center">
+                <a href="#reservation" class="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-timber-500/40 bg-noir-900/80 hover:bg-timber-600/20 text-timber-300 hover:text-white transition-all text-xs tracking-widest uppercase">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>สอบถามเมนูเครื่องดื่มและอาหารฉบับเต็ม หรือจองโต๊ะล่วงหน้า</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: ATMOSPHERE & PHOTO GALLERY (สไตล์บาร์เหล้า ไม้ ดำ-ขาว ธรรมชาติ) -->
+    <section id="atmosphere" class="py-24 bg-noir-900 relative border-t border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-timber-400 text-xs tracking-[0.3em] uppercase mb-3">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>SPACES & VIBES</span>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white tracking-wide uppercase">
+                        ATMOSPHERE & GALLERY
+                    </h2>
+                </div>
+                <p class="text-gray-400 text-sm max-w-md mt-4 md:mt-0 font-light">
+                    ทุกมุมตกแต่งอย่างประณีตด้วยไม้จริง แสงไฟวอร์มไวท์สลัว และพันธุ์ไม้สีเขียวเข้ม เพื่อให้คุณได้รูปถ่ายที่สวยและมีเอกลักษณ์ที่สุด
+                </p>
+            </div>
+
+            <!-- Dynamic Image Grid with Lightbox Preview -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                
+                <!-- Gallery 1: Solid Wood Counter Bar -->
+                <div class="gallery-card relative group overflow-hidden rounded-sm h-80 cursor-pointer border border-white/10" onclick="openLightbox('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=80', 'เคาน์เตอร์บาร์ไม้สักทอง และแสงไฟ Ambient ยามค่ำคืน')">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80" 
+                         alt="Solid Wood Counter Bar" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 filter brightness-90 contrast-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                        <span class="text-xs text-timber-400 font-mono">01 / BAR COUNTER</span>
+                        <h4 class="text-white font-serif text-lg font-bold">เคาน์เตอร์บาร์ไม้สักทอง</h4>
+                        <p class="text-gray-300 text-xs mt-1">สัมผัสเนื้อไม้แท้และพูดคุยกับบาร์เทนเดอร์อย่างใกล้ชิด</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 2: Botanical Glasshouse Courtyard -->
+                <div class="gallery-card relative group overflow-hidden rounded-sm h-80 cursor-pointer border border-white/10" onclick="openLightbox('https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=1600&q=80', 'สวนพฤกษาธรรมชาติ และโซน Glasshouse')">
+                    <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=800&q=80" 
+                         alt="Botanical Courtyard" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 filter brightness-90 contrast-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                        <span class="text-xs text-emerald-400 font-mono">02 / BOTANICAL COURTYARD</span>
+                        <h4 class="text-white font-serif text-lg font-bold">โซนสวนธรรมชาติ & เรือนกระจก</h4>
+                        <p class="text-gray-300 text-xs mt-1">มุมแสงธรรมชาติสำหรับดื่มกาแฟและถ่ายรูปสไตล์มินิมอล</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 3: Slow Bar Espresso Machine -->
+                <div class="gallery-card relative group overflow-hidden rounded-sm h-80 cursor-pointer border border-white/10" onclick="openLightbox('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1600&q=80', 'Slow Bar & Specialty Coffee Corner')">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" 
+                         alt="Slow Bar Coffee Corner" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 filter brightness-90 contrast-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                        <span class="text-xs text-timber-400 font-mono">03 / COFFEE LAB</span>
+                        <h4 class="text-white font-serif text-lg font-bold">มุมสกัดกาแฟ Specialty</h4>
+                        <p class="text-gray-300 text-xs mt-1">เครื่องชงกาแฟคัสตอมสีดำด้านเข้าชุดกับเคาน์เตอร์ไม้</p>
+                    </div>
+                </div>
+
+                <!-- Gallery 4: Private Leather Booth Lounge -->
+                <div class="gallery-card relative group overflow-hidden rounded-sm h-80 cursor-pointer border border-white/10" onclick="openLightbox('https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=1600&q=80', 'Private Booth & Leather Lounge ยามค่ำคืน')">
+                    <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=800&q=80" 
+                         alt="Leather Booth Lounge" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 filter brightness-90 contrast-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                        <span class="text-xs text-amber-400 font-mono">04 / PRIVATE BOOTH</span>
+                        <h4 class="text-white font-serif text-lg font-bold">โซฟาหนังส่วนตัว</h4>
+                        <p class="text-gray-300 text-xs mt-1">เหมาะสำหรับการสังสรรค์ พูดคุยในบรรยากาศอบอุ่นเป็นกันเอง</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: MUSIC & EVENTS (Live Jazz, Vinyl Nights) -->
+    <section id="music-events" class="py-20 bg-noir-950 relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-96 h-96 bg-timber-700/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border border-white/10 rounded-sm bg-gradient-to-r from-noir-900 via-noir-850 to-noir-900 p-8 sm:p-12 relative overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-8">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-timber-500/20 text-timber-300 text-xs uppercase tracking-widest font-mono mb-4 border border-timber-500/30">
+                            <i class="fa-solid fa-record-vinyl animate-spin-slow"></i>
+                            <span>NIGHT SESSIONS & SPECIAL EVENTS</span>
+                        </div>
+                        <h3 class="font-serif text-3xl sm:text-4xl font-bold text-white uppercase tracking-wide mb-4">
+                            LIVE VINYL & ACOUSTIC NIGHTS
+                        </h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 font-light">
+                            ทุกวันศุกร์และเสาร์ เวลา 19:30 - 22:30 น. ร่วมดื่มด่ำไปกับเสียงเพลงจากแผ่นเสียงแอนะล็อกแท้ (Vinyl Collection) 
+                            และวงดนตรีสดอคูสติกแจ๊สเคล้าเสียงดนตรีฟังสบาย ท่ามกลางแสงเทียนและกลิ่นไม้หอม
+                        </p>
+                        <div class="flex flex-wrap gap-4 text-xs text-gray-300">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-clock text-timber-400"></i>
+                                <span>ทุกวันศุกร์ - เสาร์: 19:30 - 22:30 น.</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-guitar text-timber-400"></i>
+                                <span>Acoustic Soul, Neo-Jazz & Vintage Vinyl</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-ticket text-timber-400"></i>
+                                <span>เข้าฟรี (แนะนำจองโต๊ะล่วงหน้า)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
+                        <a href="#reservation" class="text-center px-6 py-3.5 rounded-sm bg-timber-600 hover:bg-timber-500 text-white font-medium text-xs tracking-widest uppercase transition-all shadow-lg border border-timber-400/40">
+                            <i class="fa-solid fa-chair mr-2"></i> จองโต๊ะคืนดนตรีสด
+                        </a>
+                        <a href="https://line.me" target="_blank" class="text-center px-6 py-3.5 rounded-sm border border-white/20 hover:border-timber-400 bg-noir-900 text-gray-200 hover:text-white font-medium text-xs tracking-widest uppercase transition-all">
+                            <i class="fa-brands fa-line text-emerald-400 mr-2"></i> สอบถามตารางศิลปิน
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: TABLE RESERVATION FORM -->
+    <section id="reservation" class="py-24 bg-noir-900 relative border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 text-timber-400 text-xs tracking-[0.3em] uppercase mb-3">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <span>RESERVE YOUR MOMENT</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white tracking-wide uppercase mb-3">
+                    สำรองที่นั่ง & จองโต๊ะล่วงหน้า
+                </h2>
+                <p class="text-gray-400 text-xs sm:text-sm font-light">
+                    เพื่อความสะดวกสบายและที่นั่งในโซนที่คุณชื่นชอบ สามารถกรอกข้อมูลด้านล่างเพื่อสำรองโต๊ะได้ทันที
+                </p>
+            </div>
+
+            <!-- Form Card -->
+            <div class="bg-noir-950/80 border border-white/10 rounded-sm p-6 sm:p-10 shadow-2xl backdrop-blur-md relative">
+                
+                <form id="booking-form" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        
+                        <!-- Name -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-medium">ชื่อ-นามสกุล ผู้จอง <span class="text-amber-500">*</span></label>
+                            <input type="text" id="guest-name" required placeholder="เช่น คุณวิภาดา รัตนกุล" 
+                                   class="w-full px-4 py-3 rounded-sm bg-noir-900 border border-white/15 focus:border-timber-400 focus:outline-none text-white text-sm placeholder-gray-600 transition-colors">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-medium">เบอร์โทรศัพท์ติดต่อ <span class="text-amber-500">*</span></label>
+                            <input type="tel" id="guest-phone" required placeholder="เช่น 081-234-5678" 
+                                   class="w-full px-4 py-3 rounded-sm bg-noir-900 border border-white/15 focus:border-timber-400 focus:outline-none text-white text-sm placeholder-gray-600 transition-colors">
+                        </div>
+
+                        <!-- Date -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-medium">วันที่ต้องการจอง <span class="text-amber-500">*</span></label>
+                            <input type="date" id="booking-date" required 
+                                   class="w-full px-4 py-3 rounded-sm bg-noir-900 border border-white/15 focus:border-timber-400 focus:outline-none text-white text-sm placeholder-gray-600 transition-colors">
+                        </div>
+
+                        <!-- Time & Shift -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-medium">ช่วงเวลาและกะ <span class="text-amber-500">*</span></label>
+                            <select id="booking-time" required class="w-full px-4 py-3 rounded-sm bg-noir-900 border border-white/15 focus:border-timber-400 focus:outline-none text-white text-sm transition-colors">
+                                <option value="" disabled selected>กรุณาเลือกช่วงเวลา</option>
+                                <optgroup label="☕ กะกลางวัน (Day Cafe & Slow Bar)">
+                                    <option value="10:00">10:00 น.</option>
+                                    <option value="11:30">11:30 น.</option>
+                                    <option value="13:00">13:00 น.</option>
+                                    <option value="14:30">14:30 น.</option>
+                                    <option value="16:00">16:00 น.</option>
+                                </optgroup>
+                                <optgroup label="🍸 กะกลางคืน (Night Bar & Cocktails)">
+                                    <option value="17:30">17:30 น. (Sunset Session)</option>
+                                    <option value="19:00">19:00 น. (Dinner & Music)</option>
+                                    <option value="20:30">20:30 น. (Live Sessions)</option>
+                                    <option value="22:00">22:00 น. (Late Night Bar)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <!-- Guests Number -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-medium">จำนวนแขก / ที่นั่ง <span class="text-amber-500">*</span></label>
+                            <select id="guest-count" required class="w-full px-4 py-3 rounded-sm bg-noir-900 border border-white/15 focus:border-timber-400 focus:outline-none text-white text-sm transition-colors">
+                                <option value="1">1 ท่าน (หน้าบาร์เดี่ยว)</option>
+                                <option value="2" selected>2 ท่าน (คู่รัก / เพื่อน)</option>
+                                <option value="3-4">3 - 4 ท่าน (โต๊ะกลาง)</option>
+                                <option value="5-8">5 - 8 ท่าน (โซนโซฟาใหญ่)</option>
+                                <option value="8+">มากกว่า 8 ท่าน (เหมาโซน / ปาร์ตี้)</option>
+                            </select>
+                        </div>
+
+                        <!-- Seating Zone Preference -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-medium">โซนที่นั่งที่ต้องการ <span class="text-amber-500">*</span></label>
+                            <select id="seating-zone" required class="w-full px-4 py-3 rounded-sm bg-noir-900 border border-white/15 focus:border-timber-400 focus:outline-none text-white text-sm transition-colors">
+                                <option value="Counter Bar">🍸 Counter Bar (หน้าบาร์ไม้สัก - สัมผัสฟีลบาร์แท้ๆ)</option>
+                                <option value="Botanical Courtyard">🌿 Botanical Courtyard (โซนสวนต้นไม้ธรรมชาติ)</option>
+                                <option value="Leather Lounge">🛋️ Leather Lounge (โซฟาหนังคลาสสิก นั่งสบาย)</option>
+                                <option value="Any">✨ โซนใดก็ได้ที่ว่าง</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Special Requests -->
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-medium">คำขอพิเศษเพิ่มเติม (ถ้ามี)</label>
+                        <textarea id="special-request" rows="3" placeholder="เช่น ขอโต๊ะริมหน้าต่าง, วันเกิด, ต้องการสั่งเค้กพิเศษ..." 
+                                  class="w-full px-4 py-3 rounded-sm bg-noir-900 border border-white/15 focus:border-timber-400 focus:outline-none text-white text-sm placeholder-gray-600 transition-colors"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-2">
+                        <button type="submit" class="w-full py-4 rounded-sm bg-gradient-to-r from-timber-600 via-timber-500 to-timber-600 hover:from-timber-500 hover:to-timber-400 text-white font-serif text-lg tracking-widest uppercase transition-all shadow-xl shadow-timber-900/50 border border-timber-400/40 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-paper-plane text-sm"></i>
+                            <span>ยืนยันการจองที่นั่ง (CONFIRM RESERVATION)</span>
+                        </button>
+                    </div>
+
+                    <p class="text-center text-[11px] text-gray-500 mt-2">
+                        * ทางร้านจะโทรศัพท์หรือส่งข้อความยืนยันการจองล่วงหน้า 1 ชั่วโมง / สำหรับกลุ่มใหญ่มากกว่า 8 ท่าน แนะนำติดต่อผ่าน LINE Official
+                    </p>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: LOCATION, MAP & CONTACT -->
+    <section id="location" class="py-24 bg-noir-950 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Contact Info Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 text-timber-400 text-xs tracking-[0.3em] uppercase mb-3">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>VISIT OUR SPACE</span>
+                        </div>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white tracking-wide uppercase mb-4">
+                            LOCATION & HOURS
+                        </h2>
+                        <p class="text-gray-400 text-sm font-light">
+                            แวะมาดื่มด่ำกับเครื่องดื่มและบรรยากาศอันเป็นเอกลักษณ์ ที่ตั้งสะดวก มีที่จอดรถพร้อมรองรับ
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Address -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-sm bg-noir-900 border border-white/10 flex items-center justify-center text-timber-300 shrink-0">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white text-sm font-medium">ที่ตั้งร้าน (Address)</h4>
+                                <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                                    เลขที่ 88/12 ซอยอารีย์สัมพันธ์ 5 แขวงพญาไท เขตพญาไท กรุงเทพมหานคร 10400<br/>
+                                    (ใกล้สถานี BTS อารีย์ / มีลานจอดรถส่วนตัวรองรับ 20 คัน)
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-sm bg-noir-900 border border-white/10 flex items-center justify-center text-amber-300 shrink-0">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white text-sm font-medium">เวลาเปิดให้บริการ (Operating Hours)</h4>
+                                <div class="text-xs text-gray-400 mt-1 space-y-1">
+                                    <p>☕ <strong class="text-gray-200">Day Cafe & Slow Bar:</strong> 08:30 - 17:00 น. (ทุกวัน)</p>
+                                    <p>🍸 <strong class="text-gray-200">Night Bar & Tapas:</strong> 17:00 - 00:00 น. (เปิดถึง 01:00 น. ในคืนศุกร์-เสาร์)</p>
+                                    <p class="text-[11px] text-timber-400/80 pt-1">* ครัวปิด 23:00 น. / บาร์เครื่องดื่มบริการตลอดคืน</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone & Social Contacts -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-sm bg-noir-900 border border-white/10 flex items-center justify-center text-emerald-300 shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white text-sm font-medium">ติดต่อ & โซเชียลมีเดีย</h4>
+                                <p class="text-xs text-gray-300 mt-1">
+                                    โทร: <a href="tel:0987654321" class="text-timber-300 hover:underline">098-765-4321</a>
+                                </p>
+                                <div class="flex items-center gap-3 mt-3">
+                                    <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-sm bg-noir-850 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:border-timber-400 transition-colors" title="Instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-sm bg-noir-850 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:border-timber-400 transition-colors" title="Facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://line.me" target="_blank" class="w-8 h-8 rounded-sm bg-noir-850 border border-white/10 flex items-center justify-center text-emerald-400 hover:border-emerald-400 transition-colors" title="LINE Official">
+                                        <i class="fa-brands fa-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Google Maps Interactive Embed -->
+                <div class="lg:col-span-7">
+                    <div class="rounded-sm overflow-hidden border border-white/10 shadow-2xl relative bg-noir-900 h-96 sm:h-[420px]">
+                        <!-- Dark Themed styled map container -->
+                        <iframe 
+                            title="Nocturne Cafe and Bar Location"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.093466179373!2d100.5342617758925!3d13.774421196728076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ebd47b4d375%3A0xe54e63495d4d3d37!2sAri%20Samphan%205%20Alley%2C%20Khwaeng%20Phaya%20Thai%2C%20Khet%20Phaya%20Thai%2C%20Krung%20Thep%20Maha%20Nakhon%2010400!5e0!3m2!1sen!2sth!4v1700000000000!5m2!1sen!2sth" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(95%);" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="absolute bottom-4 left-4 bg-noir-950/90 border border-white/10 px-4 py-2 rounded-sm text-xs text-gray-300 backdrop-blur-md pointer-events-none">
+                            <span class="text-timber-300 font-medium">📌 THE NOCTURNE</span> (Ari Samphan 5, Bangkok)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-noir-950 border-t border-white/10 pt-16 pb-12 text-gray-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-sm border border-timber-400/40 bg-noir-900 flex items-center justify-center text-timber-300">
+                            <i class="fa-solid fa-whiskey-glass text-sm"></i>
+                        </div>
+                        <span class="font-serif text-2xl tracking-[0.2em] font-bold text-white uppercase">NOCTURNE</span>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed max-w-sm font-light">
+                        คาเฟ่และบาร์สไตล์ดาร์กเอสเธติก ผสานเสน่ห์ไม้จริง ทรงคุณค่าด้วยรสชาติกาแฟสเปเชียลตี้และคราฟต์ค็อกเทล ท่ามกลางสวนธรรมชาติใจกลางเมือง
+                    </p>
+                    <p class="text-timber-400/90 font-mono text-[11px]">
+                        Daytime Solace. Midnight Spirits.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div>
+                    <h5 class="text-white uppercase tracking-wider font-semibold mb-4 text-xs">การนำทาง (Links)</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-timber-300 transition-colors">หน้าแรก (Home)</a></li>
+                        <li><a href="#about" class="hover:text-timber-300 transition-colors">เรื่องราวและปรัชญา (Our Story)</a></li>
+                        <li><a href="#menu" class="hover:text-timber-300 transition-colors">เมนูซิกเนเจอร์ (Signature Menu)</a></li>
+                        <li><a href="#atmosphere" class="hover:text-timber-300 transition-colors">บรรยากาศร้าน (Atmosphere)</a></li>
+                        <li><a href="#music-events" class="hover:text-timber-300 transition-colors">ค่ำคืนดนตรีสด (Live Sessions)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services & Booking -->
+                <div>
+                    <h5 class="text-white uppercase tracking-wider font-semibold mb-4 text-xs">บริการพิเศษ (Services)</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#reservation" class="hover:text-timber-300 transition-colors">จองโต๊ะล่วงหน้า</a></li>
+                        <li><a href="https://line.me" target="_blank" class="hover:text-timber-300 transition-colors">จัดงานเลี้ยงส่วนตัว / Private Party</a></li>
+                        <li><a href="https://line.me" target="_blank" class="hover:text-timber-300 transition-colors">บริการเมล็ดกาแฟ Specialty คั่วบด</a></li>
+                        <li><a href="tel:0987654321" class="hover:text-timber-300 transition-colors">โทรสอบถาม: 098-765-4321</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright & Credits -->
+            <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-gray-500">
+                <p>© 2026 THE NOCTURNE Cafe & Botanical Bar. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <span class="hover:text-gray-400 cursor-pointer">Privacy Policy</span>
+                    <span>•</span>
+                    <span class="hover:text-gray-400 cursor-pointer">Terms of Service</span>
+                    <span>•</span>
+                    <a href="#home" class="hover:text-timber-300 transition-colors flex items-center gap-1">
+                        <span>กลับขึ้นด้านบน</span>
+                        <i class="fa-solid fa-arrow-up text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL (Image Preview) -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-noir-950/95 backdrop-blur-md hidden items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-gray-400 hover:text-white text-3xl focus:outline-none transition-colors" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl max-h-[85vh] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Enlarged gallery view" class="max-h-[75vh] w-auto object-contain rounded-sm border border-white/10 shadow-2xl">
+            <p id="lightbox-caption" class="text-gray-300 text-sm mt-4 text-center font-serif tracking-wide"></p>
+        </div>
+    </div>
+
+    <!-- BOOKING SUCCESS MODAL -->
+    <div id="booking-modal" class="fixed inset-0 z-50 bg-noir-950/90 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-noir-900 border border-timber-500/50 rounded-sm p-8 max-w-md w-full shadow-2xl text-center relative animate-fade-in">
+            <div class="w-16 h-16 rounded-full bg-timber-900/60 border border-timber-400 flex items-center justify-center text-timber-300 text-2xl mx-auto mb-4">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-white uppercase tracking-wider mb-2">สำรองที่นั่งสำเร็จ!</h3>
+            <p class="text-xs text-gray-300 leading-relaxed mb-6 font-light">
+                ขอบพระคุณที่เลือกให้ <strong class="text-white">NOCTURNE</strong> ได้ดูแลคุณ<br/>
+                รายละเอียดการจองของคุณได้รับการบันทึกเรียบร้อยแล้ว
+            </p>
+            
+            <div id="booking-summary-box" class="bg-noir-950 border border-white/10 p-4 rounded text-left text-xs text-gray-300 space-y-2 mb-6">
+                <!-- Injected via JS -->
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <a id="line-notify-btn" href="#" target="_blank" class="w-full py-3 rounded-sm bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-xs tracking-wider uppercase transition-colors flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-line text-lg"></i>
+                    <span>ส่งข้อมูลยืนยันผ่าน LINE Official</span>
+                </a>
+                <button onclick="closeBookingModal()" class="w-full py-2.5 rounded-sm border border-white/20 hover:border-white/40 text-gray-300 hover:text-white text-xs tracking-wider uppercase transition-colors">
+                    ปิดหน้าต่าง
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING QUICK ACTIONS (Call & Line) -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+        <!-- Floating Line Button -->
+        <a href="https://line.me" target="_blank" class="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg shadow-emerald-950/50 hover:scale-110 transition-all border border-emerald-400/30" title="แชทผ่าน LINE">
+            <i class="fa-brands fa-line text-2xl"></i>
+        </a>
+        <!-- Floating Call Button -->
+        <a href="tel:0987654321" class="w-12 h-12 rounded-full bg-amber-600 hover:bg-amber-500 text-white flex items-center justify-center shadow-lg shadow-amber-950/50 hover:scale-110 transition-all border border-amber-400/30" title="โทรสอบถาม">
+            <i class="fa-solid fa-phone text-lg"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+</body>
+</html>
